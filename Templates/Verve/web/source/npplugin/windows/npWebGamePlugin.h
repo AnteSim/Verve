@@ -1,0 +1,35 @@
+//-----------------------------------------------------------------------------
+// Torque
+// Copyright GarageGames, LLC 2011
+//-----------------------------------------------------------------------------
+
+#pragma once
+
+#include "np_pluginbase.h"
+
+// Windows specific NP plugin interface for handling platform window integration with Torque 3D
+class NPWebGamePlugin
+{
+public:
+
+   NPWebGamePlugin(NPP aInstance);
+   ~NPWebGamePlugin();
+
+   // very simple interface based on browser window opening/closing
+   NPBool	Open(NPWindow* aWindow);
+   void	   Close();
+   NPBool	IsOpen();
+
+   // plugin instance
+   NPP	   mInstance;
+   bool     mOpen;
+
+   static NPWebGamePlugin* sInstance;
+
+   // Browser platform native window handle
+   HWND mHwnd;
+   LONG_PTR mOriginalWinProc;
+
+};
+
+

@@ -1,0 +1,264 @@
+<?xml version="1.0" ?>
+<VerveControllerSequence Version="0.0.0a">
+    <Properties>
+        <Time>123473</Time>
+        <Duration>123473</Duration>
+        <TimeScale>1</TimeScale>
+        <Loop>0</Loop>
+        <LoopBackwards>0</LoopBackwards>
+        <LoopCount>-1</LoopCount>
+        <LoopDelay>0</LoopDelay>
+        <ResetOnCompletion>1</ResetOnCompletion>
+        <name>VerveEditorController</name>
+        <parentGroup>RootGroup</parentGroup>
+        <canSaveDynamicFields>1</canSaveDynamicFields>
+    </Properties>
+    <DataTable>
+        <DataItem Type="VARIABLE" Name="Camera" Value="LocalClientConnection.Camera" />
+        <DataItem Type="STATIC" Name="CameraPath" Value="CameraWire" />
+    </DataTable>
+    <VObject Type="VDirectorGroup">
+        <Properties>
+            <Enabled>1</Enabled>
+            <Label>DirectorGroup</Label>
+        </Properties>
+        <VObject Type="VDirectorTrack">
+            <Properties>
+                <Enabled>1</Enabled>
+                <Label>DirectorTrack</Label>
+            </Properties>
+            <VObject Type="VDirectorEvent">
+                <Properties>
+                    <Enabled>1</Enabled>
+                    <Label>DefaultEvent</Label>
+                    <TriggerTime>0</TriggerTime>
+                    <Duration>123473</Duration>
+                    <Target>Camera</Target>
+                </Properties>
+            </VObject>
+        </VObject>
+        <VObject Type="VFadeTrack">
+            <Properties>
+                <Enabled>1</Enabled>
+                <Label>FadeTrack</Label>
+            </Properties>
+            <VObject Type="VFadeEvent">
+                <Properties>
+                    <Enabled>1</Enabled>
+                    <Label>FadeEvent</Label>
+                    <TriggerTime>0</TriggerTime>
+                    <Duration>100</Duration>
+                </Properties>
+            </VObject>
+            <VObject Type="VFadeEvent">
+                <Properties>
+                    <Enabled>1</Enabled>
+                    <Label>FadeEvent</Label>
+                    <TriggerTime>122970</TriggerTime>
+                    <Duration>500</Duration>
+                </Properties>
+            </VObject>
+        </VObject>
+    </VObject>
+    <VObject Type="VCameraGroup">
+        <Properties>
+            <Enabled>1</Enabled>
+            <Label>Camera</Label>
+            <Reference>Camera</Reference>
+        </Properties>
+        <VObject Type="VMotionTrack">
+            <Properties>
+                <Enabled>1</Enabled>
+                <Label>MotionTrack</Label>
+                <Reference>CameraPath</Reference>
+                <OrientationMode>TOPATH</OrientationMode>
+                <OrientationData></OrientationData>
+                <Relative>0</Relative>
+            </Properties>
+            <VObject Type="VMotionEvent">
+                <Properties>
+                    <Enabled>1</Enabled>
+                    <Label>MotionEvent</Label>
+                    <TriggerTime>0</TriggerTime>
+                    <Duration>0</Duration>
+                </Properties>
+            </VObject>
+            <VObject Type="VMotionEvent">
+                <Properties>
+                    <Enabled>1</Enabled>
+                    <Label>MotionEvent</Label>
+                    <TriggerTime>3108</TriggerTime>
+                    <Duration>0</Duration>
+                </Properties>
+            </VObject>
+            <VObject Type="VMotionEvent">
+                <Properties>
+                    <Enabled>1</Enabled>
+                    <Label>MotionEvent</Label>
+                    <TriggerTime>7229</TriggerTime>
+                    <Duration>0</Duration>
+                </Properties>
+            </VObject>
+            <VObject Type="VMotionEvent">
+                <Properties>
+                    <Enabled>1</Enabled>
+                    <Label>MotionEvent</Label>
+                    <TriggerTime>12103</TriggerTime>
+                    <Duration>0</Duration>
+                </Properties>
+            </VObject>
+            <VObject Type="VMotionEvent">
+                <Properties>
+                    <Enabled>1</Enabled>
+                    <Label>MotionEvent</Label>
+                    <TriggerTime>15243</TriggerTime>
+                    <Duration>0</Duration>
+                </Properties>
+            </VObject>
+            <VObject Type="VMotionEvent">
+                <Properties>
+                    <Enabled>1</Enabled>
+                    <Label>MotionEvent</Label>
+                    <TriggerTime>21711</TriggerTime>
+                    <Duration>0</Duration>
+                </Properties>
+            </VObject>
+            <VObject Type="VMotionEvent">
+                <Properties>
+                    <Enabled>1</Enabled>
+                    <Label>MotionEvent</Label>
+                    <TriggerTime>26492</TriggerTime>
+                    <Duration>0</Duration>
+                </Properties>
+            </VObject>
+            <VObject Type="VMotionEvent">
+                <Properties>
+                    <Enabled>1</Enabled>
+                    <Label>MotionEvent</Label>
+                    <TriggerTime>31579</TriggerTime>
+                    <Duration>0</Duration>
+                </Properties>
+            </VObject>
+            <VObject Type="VMotionEvent">
+                <Properties>
+                    <Enabled>1</Enabled>
+                    <Label>MotionEvent</Label>
+                    <TriggerTime>36991</TriggerTime>
+                    <Duration>0</Duration>
+                </Properties>
+            </VObject>
+            <VObject Type="VMotionEvent">
+                <Properties>
+                    <Enabled>1</Enabled>
+                    <Label>MotionEvent</Label>
+                    <TriggerTime>44312</TriggerTime>
+                    <Duration>0</Duration>
+                </Properties>
+            </VObject>
+            <VObject Type="VMotionEvent">
+                <Properties>
+                    <Enabled>1</Enabled>
+                    <Label>MotionEvent</Label>
+                    <TriggerTime>53621</TriggerTime>
+                    <Duration>0</Duration>
+                </Properties>
+            </VObject>
+            <VObject Type="VMotionEvent">
+                <Properties>
+                    <Enabled>1</Enabled>
+                    <Label>MotionEvent</Label>
+                    <TriggerTime>60272</TriggerTime>
+                    <Duration>0</Duration>
+                </Properties>
+            </VObject>
+            <VObject Type="VMotionEvent">
+                <Properties>
+                    <Enabled>1</Enabled>
+                    <Label>MotionEvent</Label>
+                    <TriggerTime>66785</TriggerTime>
+                    <Duration>0</Duration>
+                </Properties>
+            </VObject>
+            <VObject Type="VMotionEvent">
+                <Properties>
+                    <Enabled>1</Enabled>
+                    <Label>MotionEvent</Label>
+                    <TriggerTime>72822</TriggerTime>
+                    <Duration>0</Duration>
+                </Properties>
+            </VObject>
+            <VObject Type="VMotionEvent">
+                <Properties>
+                    <Enabled>1</Enabled>
+                    <Label>MotionEvent</Label>
+                    <TriggerTime>77263</TriggerTime>
+                    <Duration>0</Duration>
+                </Properties>
+            </VObject>
+            <VObject Type="VMotionEvent">
+                <Properties>
+                    <Enabled>1</Enabled>
+                    <Label>MotionEvent</Label>
+                    <TriggerTime>80801</TriggerTime>
+                    <Duration>0</Duration>
+                </Properties>
+            </VObject>
+            <VObject Type="VMotionEvent">
+                <Properties>
+                    <Enabled>1</Enabled>
+                    <Label>MotionEvent</Label>
+                    <TriggerTime>89719</TriggerTime>
+                    <Duration>0</Duration>
+                </Properties>
+            </VObject>
+            <VObject Type="VMotionEvent">
+                <Properties>
+                    <Enabled>1</Enabled>
+                    <Label>MotionEvent</Label>
+                    <TriggerTime>93165</TriggerTime>
+                    <Duration>0</Duration>
+                </Properties>
+            </VObject>
+            <VObject Type="VMotionEvent">
+                <Properties>
+                    <Enabled>1</Enabled>
+                    <Label>MotionEvent</Label>
+                    <TriggerTime>97201</TriggerTime>
+                    <Duration>0</Duration>
+                </Properties>
+            </VObject>
+            <VObject Type="VMotionEvent">
+                <Properties>
+                    <Enabled>1</Enabled>
+                    <Label>MotionEvent</Label>
+                    <TriggerTime>101468</TriggerTime>
+                    <Duration>0</Duration>
+                </Properties>
+            </VObject>
+            <VObject Type="VMotionEvent">
+                <Properties>
+                    <Enabled>1</Enabled>
+                    <Label>MotionEvent</Label>
+                    <TriggerTime>111088</TriggerTime>
+                    <Duration>0</Duration>
+                </Properties>
+            </VObject>
+            <VObject Type="VMotionEvent">
+                <Properties>
+                    <Enabled>1</Enabled>
+                    <Label>MotionEvent</Label>
+                    <TriggerTime>118470</TriggerTime>
+                    <Duration>0</Duration>
+                </Properties>
+            </VObject>
+            <VObject Type="VMotionEvent">
+                <Properties>
+                    <Enabled>1</Enabled>
+                    <Label>MotionEvent</Label>
+                    <TriggerTime>123473</TriggerTime>
+                    <Duration>0</Duration>
+                </Properties>
+            </VObject>
+        </VObject>
+    </VObject>
+</VerveControllerSequence>

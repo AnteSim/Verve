@@ -1,0 +1,163 @@
+//--- OBJECT WRITE BEGIN ---
+new SimGroup(MissionGroup) {
+   canSaveDynamicFields = "1";
+      cdTrack = "2";
+      CTF_scoreLimit = "5";
+      Enabled = "1";
+      musicTrack = "lush";
+
+   new LevelInfo(theLevelInfo) {
+      nearClip = "0.1";
+      visibleDistance = "2000";
+      decalBias = "0.0015";
+      fogColor = "0.992157 0.992157 0.992157 1";
+      fogDensity = "0";
+      fogDensityOffset = "0";
+      fogAtmosphereHeight = "0";
+      canvasClearColor = "253 253 253 255";
+      advancedLightmapSupport = "0";
+         desc0 = "This is the Mission file used in the Verve Path Tutorial.";
+         LevelName = "Verve Path Tutorial";
+   };
+   new MissionArea(theMissionArea) {
+      Area = "-360 -648 720 1296";
+      flightCeiling = "300";
+      flightCeilingRange = "20";
+      canSaveDynamicFields = "1";
+         Enabled = "1";
+         TypeBool locked = "true";
+   };
+   new SkyBox(theSky) {
+      Material = "BlankWhite";
+      drawBottom = "0";
+      fogBandHeight = "0.1";
+      Position = "0 0 0";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      canSaveDynamicFields = "1";
+         Enabled = "1";
+   };
+   new Sun(theSun) {
+      azimuth = "98";
+      elevation = "40";
+      color = "0.937255 0.92549 0.639216 1";
+      ambient = "0.231373 0.270588 0.270588 1";
+      brightness = "1";
+      castShadows = "0";
+      coronaEnabled = "1";
+      coronaScale = "1";
+      coronaTint = "1 1 1 1";
+      coronaUseLightColor = "1";
+      flareScale = "1";
+      attenuationRatio = "0 1 1";
+      shadowType = "PSSM";
+      texSize = "1024";
+      overDarkFactor = "3000 1500 750 500";
+      shadowDistance = "500";
+      shadowSoftness = "0.4";
+      numSplits = "4";
+      logWeight = "0.9";
+      fadeStartDistance = "0";
+      lastSplitTerrainOnly = "0";
+      splitFadeDistances = "1 1 1 1";
+      representedInLightmap = "0";
+      shadowDarkenColor = "0 0 0 -1";
+      includeLightmappedGeometryInShadow = "0";
+      Position = "0 0 0";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      canSaveDynamicFields = "1";
+         bias = "0.1";
+         Blur = "1";
+         Enabled = "1";
+         height = "1024";
+         lightBleedFactor = "0.8";
+         minVariance = "0";
+         pointShadowType = "PointShadowType_Paraboloid";
+         shadowBox = "-200 -200 -200 200 200 200";
+         width = "3072";
+   };
+   new TSStatic() {
+      shapeName = "art/shapes/VervePathTutorial/DemoRoomLrg.dae";
+      playAmbient = "1";
+      receiveSunLight = "1";
+      receiveLMLighting = "1";
+      useCustomAmbientLighting = "0";
+      customAmbientLighting = "0 0 0 1";
+      collisionType = "Visible Mesh";
+      allowPlayerStep = "1";
+      renderNormals = "0";
+      Position = "0 0 0";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      canSaveDynamicFields = "1";
+   };
+   new SimGroup(Doors) {
+      canSaveDynamicFields = "1";
+
+      new SimGroup(Door0) {
+         canSaveDynamicFields = "1";
+
+         new StaticShape(DoorShape0_Left) {
+            receiveSunLight = "1";
+            receiveLMLighting = "1";
+            useCustomAmbientLighting = "0";
+            customAmbientLighting = "0 0 0 1";
+            dataBlock = "VervePathTutorial_DoorData";
+            Position = "-2 12 2";
+            rotation = "1 0 0 0";
+            scale = "1 1 1";
+            canSaveDynamicFields = "1";
+         };
+         new StaticShape(DoorShape0_Right) {
+            receiveSunLight = "1";
+            receiveLMLighting = "1";
+            useCustomAmbientLighting = "0";
+            customAmbientLighting = "0 0 0 1";
+            dataBlock = "VervePathTutorial_DoorData";
+            Position = "2 12 2";
+            rotation = "1 0 0 0";
+            scale = "1 1 1";
+            canSaveDynamicFields = "1";
+         };
+      };
+      new SimGroup(Door1) {
+         canSaveDynamicFields = "1";
+
+         new StaticShape(DoorShape1_Left) {
+            receiveSunLight = "1";
+            receiveLMLighting = "1";
+            useCustomAmbientLighting = "0";
+            customAmbientLighting = "0 0 0 1";
+            dataBlock = "VervePathTutorial_DoorData";
+            Position = "-2 12 14";
+            rotation = "1 0 0 0";
+            scale = "1 1 1";
+            canSaveDynamicFields = "1";
+         };
+         new StaticShape(DoorShape1_Right) {
+            receiveSunLight = "1";
+            receiveLMLighting = "1";
+            useCustomAmbientLighting = "0";
+            customAmbientLighting = "0 0 0 1";
+            dataBlock = "VervePathTutorial_DoorData";
+            Position = "2 12 14";
+            rotation = "1 0 0 0";
+            scale = "1 1 1";
+            canSaveDynamicFields = "1";
+         };
+      };
+   };
+   new StaticShape(ElevatorPlatformShape) {
+      receiveSunLight = "1";
+      receiveLMLighting = "1";
+      useCustomAmbientLighting = "0";
+      customAmbientLighting = "0 0 0 1";
+      dataBlock = "VervePathTutorial_ElevatorPlatformData";
+      Position = "0 22.25 -0.25";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      canSaveDynamicFields = "1";
+   };
+};
+//--- OBJECT WRITE END ---
